@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>求生无限：光球原型</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel controls">
+        <h1>求生无限 · 光球角色原型</h1>
+        <p class="subtitle">不同颜色与大小的光球，代表不同幸存者。</p>
+        <div class="buttons">
+          <button id="addSurvivorBtn">新增光球角色</button>
+          <button id="nextSceneBtn">开始下一幕副本</button>
+          <button id="resetBtn" class="ghost">重置循环</button>
+        </div>
+        <div id="summary" class="summary"></div>
+      </section>
+
+      <section class="panel arena">
+        <h2>主神空间</h2>
+        <div id="orbField" class="orb-field"></div>
+      </section>
+
+      <section class="panel logs">
+        <h2>副本日志</h2>
+        <ul id="logList"></ul>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
